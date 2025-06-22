@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dummy-flask-app"
+version = "0.1.0"
+description = "A dummy Flask app for QA automation and CI/CD testing"
+authors = [
+    { name = "David Cohn Lifshitz", email = "david.kon@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "Flask>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov",
+    "flake8",
+    "requests",
+    "selenium"
+]
+
+[tool.hatch.metadata]
+# This tells hatch to look for your code in the src/ directory
+sources = ["src"]
