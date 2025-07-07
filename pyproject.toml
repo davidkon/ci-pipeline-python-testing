@@ -15,6 +15,10 @@ dependencies = [
     "Flask>=2.0.0"
 ]
 
+- name: Upgrade pip
+  run: |
+    python -m pip install --upgrade pip
+
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0.0",
