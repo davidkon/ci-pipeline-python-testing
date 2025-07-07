@@ -4,3 +4,6 @@ requests
 flake8
 pytest-cov
 setuptools
+flake8
+black
+isort
