@@ -26,3 +26,7 @@ dev = [
 
 [tool.hatch.metadata]
 sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+# Include standalone app.py as a module (not a package)
+include = ["src/app.py"]
